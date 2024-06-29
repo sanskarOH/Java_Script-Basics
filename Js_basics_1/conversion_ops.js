@@ -22,3 +22,17 @@ console.log(nullScoreNum, typeof nullScoreNum)//it will return 0 because null is
 let undefinedScore = undefined;
 let undefinedScoreNum = Number(undefinedScore)
 console.log(undefinedScoreNum, typeof undefinedScoreNum)//it will return NaN because undefined is not a valid number
+
+//for boolean
+let boolScore = true;
+let boolScoreNum = Number(boolScore)
+console.log(boolScoreNum, typeof boolScoreNum)//it will return 1 because true is 1 and false is 0
+//convertin number to boolean
+let num = 0;
+let numBool = Boolean(num)
+console.log(numBool, typeof numBool)//it will return false because 0 is false and 1 is true
+//"" is false and " " is true OR "HELLO" is true
+//number to string
+let numb = 100;
+let numStr = String(numb)
+console.log(numStr, typeof numStr)//it will return 100 as string
