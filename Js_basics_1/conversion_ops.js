@@ -36,3 +36,11 @@ console.log(numBool, typeof numBool)//it will return false because 0 is false an
 let numb = 100;
 let numStr = String(numb)
 console.log(numStr, typeof numStr)//it will return 100 as string
+
+
+//++++++++++++ OPERATIONS ++++++++++++++++++
+
+let value = 3;
+
+let negVal = -value
+console.log(negVal);
