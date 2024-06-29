@@ -75,3 +75,24 @@ console.log(3+4-7*6/7)//this is suitable for exams but not for real world applic
 console.log(true);
 console.log(+true);//it will return 1 beacuse it will convert true to number but is not good practice
 console.log(+"");//it will return 0 because it will convert "" to number but is not good practice
+
+
+let num1 , num2;
+num1 = num2 = 3;
+//not a good practice as no one will understand this code
+
+
+let gameScore = 100;
+let finalScore = gameScore++;
+console.log(finalScore, gameScore)//it will return 100, 101 because it will first assign the value and then increment
+//Prefix and Postfix
+let gameScore1 = 100;
+let finalScore1 = ++gameScore1;
+console.log(finalScore1, gameScore1)//it will return 101, 101 because it will first increment and then assign the value
+
+
+
+
+
+
+
