@@ -66,3 +66,12 @@ console.log(3 +"3" +3);//it will return 333 because it will convert 3 to string 
 console.log(3 - "3");//it will return 0 because it will convert 3 to number and then subtract
 console.log("3"-3);//it will return 0 because it will convert 3 to number and then subtract
 console.log(3 +3+"3");//it will return 63 because it will convert 3 to number and then add and then concatenate
+
+console.log(3+4-7*6/7)//this is suitable for exams but not for real world applications
+//this practice is not good because it is not readable and is not appreaciated in real world applications
+//noone will understand this code and will return all pull requests
+
+//special type conversion or tricky type conversion
+console.log(true);
+console.log(+true);//it will return 1 beacuse it will convert true to number but is not good practice
+console.log(+"");//it will return 0 because it will convert "" to number but is not good practice
