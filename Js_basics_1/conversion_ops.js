@@ -44,3 +44,25 @@ let value = 3;
 
 let negVal = -value
 console.log(negVal);
+
+// console.log(3 + 3);//addition
+// console.log(3 - 3);//subtraction
+// console.log(3 * 3);//multiplication
+// console.log(3 / 3);//division
+// console.log(3 % 3);//modulus
+// console.log(3 ** 3);//exponential
+
+let str1 = "Hello ";
+let str2 = "World";
+console.log(str1 + str2);//concatenation
+
+
+//Complex Situtations
+
+console.log(3 + "3");//it will return 33 because it will convert 3 to string and then concatenate
+console.log("3"+3);//it will return 33 because it will convert 3 to string and then concatenate
+console.log(3 +"3" +3);//it will return 333 because it will convert 3 to string and then concatenate
+
+console.log(3 - "3");//it will return 0 because it will convert 3 to number and then subtract
+console.log("3"-3);//it will return 0 because it will convert 3 to number and then subtract
+console.log(3 +3+"3");//it will return 63 because it will convert 3 to number and then add and then concatenate
