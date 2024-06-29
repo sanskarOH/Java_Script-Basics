@@ -31,4 +31,4 @@ console.log(undefined==null)//true
 //console.log(undefined==null) //true because both are equal but how? 
 //null and undefined are equal to each other but not to any other value
 
-//null will either be Converted to 0 or NaN
+//null will either be Converted to 0 or NaN .
