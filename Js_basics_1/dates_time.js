@@ -42,3 +42,16 @@ console.log(date1.getDay());//day of the week
 console.log(date1.getDate());//date of the month
 console.log(date1.getMonth());//month of the year
 console.log(date1.getFullYear());//year
+
+//thorough use of date
+
+console.log(date1.toLocaleString('default',{
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    timeZoneName: 'long'
+}))
