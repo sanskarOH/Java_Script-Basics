@@ -34,3 +34,11 @@ let date = new Date(timestamp);
 console.log(date.toString());
 console.log(date.toLocaleString('en-IN'));
 //to covert timestamp to seconds
+console.log(timestamp/1000);
+
+//Fucnrions of date
+let date1 = new Date();
+console.log(date1.getDay());//day of the week
+console.log(date1.getDate());//date of the month
+console.log(date1.getMonth());//month of the year
+console.log(date1.getFullYear());//year
