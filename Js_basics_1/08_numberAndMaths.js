@@ -40,3 +40,14 @@ console.log(Math.pow(2,3));//8
 console.log(Math.sqrt(16));//4
 console.log(Math.random());//0.123456789
 console.log(Math.floor(Math.random()*10));//0-9
+console.log(Math.floor(Math.random()*10+1));
+
+
+// tp generate random numbers between two limits
+
+const min = 10
+const max = 20 
+
+console.log(Math.floor((Math.random()*(max - min +1))) + min);
+//to generate random numbers between 10 and 20  (both inclusive)
+// max -min to set the range and + 1 to avoid zero and + min that I need atleast this minimum value
