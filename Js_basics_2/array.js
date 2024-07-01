@@ -23,4 +23,4 @@ const test2 = test1;
 test2[2] = 100;
 console.log(test1);//[1, 2, 100, 4, 5]
 //hence the arrays share same reference point
-//because they are strred in heap memory
+//because they are stored in heap memory.
