@@ -17,3 +17,16 @@ console.log(heroes);//["ironman", "spiderman", "captain america", "thor", "hulk"
 //a better way to do this is using spread operator ...
 const allHeroes = [...marvel1, ...dc1];
 console.log(allHeroes);//["ironman", "spiderman", "captain america", "thor", "hulk", "batman", "superman", "wolverine", "flash", "aquaman"]
+
+//what if there is array inn array in array
+
+const ek_aur= [1,2,3,[34,65,34],8,53,5,3,[56,67 , [7,34,344],45],356];
+//we can use flat method to flatten the array
+const flatArray = ek_aur.flat(Infinity);//depth of the array to be flattened
+
+//to check if the data is an array or not
+console.log(Array.isArray(ek_aur));//true
+//converting a data to an array
+const data = "hello";
+const data1 = Array.from(data);
+console.log(data1);//["h", "e", "l", "l", "o"]
