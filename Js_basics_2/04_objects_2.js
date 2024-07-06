@@ -57,7 +57,7 @@ const regularUser = {
 const obj3 = {...obj,...obj2}
 //  console.log(obj3)
 //we can take object keys or values in arrayas 
-console.log(Object.values(tinderuser));
+// console.log(Object.values(tinderuser));
 //in databse we will get array of objects
 
 const users = [
@@ -75,4 +75,41 @@ const users = [
     }
 ]
 
-console.log(users[0].name)
+// console.log(users[0].name)
+
+//Destructuring Objects
+
+// const course = {
+//     coursename : "Js in hindi",
+//     fee : "999",
+//     courseInstructor : "Sanskar Diwedi"
+// }
+
+//We can access it using course.courseInstructor 
+//but when it is to be used multiple times 
+//then it does not look clean or good
+//rather we can use this approach 
+
+//can even name it according to urself
+const {courseInstructor : instructor} = course
+
+// console.log(courseInstructor)
+console.log(instructor);
+
+//little react < props> 
+//  const navbar = ({comapnay}) =>{
+//     // console.log(this.props.company)
+//     console.log(comapnay)
+//  }
+
+//  navbar(comapnay = "Google.in")
+
+//Api gives data in JSON format 
+//stored in key value pair where key as well as value is in string
+// {
+//     //just basic errors not need to worry
+//     "name": "Sanskar",
+//     "courseName" : "React basics",
+//     "price" : 100
+
+// }
