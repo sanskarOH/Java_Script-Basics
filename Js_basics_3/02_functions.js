@@ -18,4 +18,27 @@ function cart2(val1,val2,...num1){
 
 }
 console.log(cart2(3 ,300 ,3003))//this will return only 3003
-//that is because the first two values given to the val1 and val var
+//that is because the first two values given to the val1 and val2 var
+
+const user = {
+    username : "hitesh",
+    price : 99,
+    email : "sanskar@google.com"
+}
+
+
+//check for type checking in while accessing object attributes for correct name
+function objectHandler(anyobject){
+    console.log(`Username is ${anyobject.username}`);
+    console.log(`Price is ${anyobject.price}`);
+    console.log(`Email is ${anyobject.email}`);
+}
+
+objectHandler(user)
+//we can also directly pass objects raw
+objectHandler({
+    username : "Sanskar",
+    price : 199,
+    email : "hitesh@google.com" 
+
+})
