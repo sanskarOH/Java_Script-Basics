@@ -113,3 +113,6 @@ console.log(instructor);
 //     "price" : 100
 
 // }
+
+//You can use different json formatters to understand it 
+//Maybe we can also get an array of objects in response
