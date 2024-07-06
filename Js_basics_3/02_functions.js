@@ -42,3 +42,11 @@ objectHandler({
     email : "hitesh@google.com" 
 
 })
+
+//passing arrays in parameters or arguments
+
+const ArryaN = [1,2,3,4,5,66]
+function returnval(getArray){
+    return getArray[1];
+}
+console.log(returnval(ArryaN))
