@@ -30,3 +30,8 @@ console.log(Array.isArray(ek_aur));//true
 const data = "hello";
 const data1 = Array.from(data);
 console.log(data1);//["h", "e", "l", "l", "o"]
+
+//forming array from key:value pairs
+const data2 = {0: "hello", 1: "world", 2: "javascript"};
+const data3 = Array.from(data2);
+console.log(data3);//["hello", "world", "javascript"]
