@@ -120,3 +120,5 @@ p1.then((res) => {
 //This is not a good practice
 //This is called promise chaining
 //This is bad for code readability
+
+

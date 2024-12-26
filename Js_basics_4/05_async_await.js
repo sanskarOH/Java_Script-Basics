@@ -27,9 +27,25 @@ function api(data) {
 
 //nw if I use await api(); it will give me an error4
 
-async function getData() {
-  await api(1);
-  await api(2);
-}
+// async function getData() {
+//   console.log("getting data 1");
+//   await api(1);
+//   console.log("getting data 2");
+//   await api(2);
+// }
 //to call the api twice we can use await api(); twice
 //this was so easy then promise chaining or callback
+
+//Now here I have to put the code innside a function to call it
+//This is where iife comes in
+//IIFE - Immediately Invoked Function Expression
+//It is a function that runs as soon as it is defined
+//converting it
+(async function () {
+  console.log("getting data 1");
+  await api(1);
+  console.log("getting data 2");
+  await api(2);
+})();
+//now as soon as the function is defined it will run
+//very advanced way of writing code
