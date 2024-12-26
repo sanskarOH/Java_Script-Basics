@@ -47,6 +47,7 @@ function getData(dataID, getNextData) {
     setTimeout(() => {
       console.log("data", dataID);
       resolve("Data Loaded");
+      //reject("Error
       if (getNextData) {
         getNextData();
       }
@@ -54,3 +55,33 @@ function getData(dataID, getNextData) {
   });
 }
 //now when we print prommise it will be in fulfilled state
+
+//Promise has two methods
+//1. then - to handle the resolve
+//2. catch - to handle the reject
+
+let result = getData(8);
+result
+  .then((response) => {
+    console.log("Data Loaded successfully");
+  })
+  .catch((error) => {
+    console.log("Error", error);
+  });
+
+//anpther example
+
+function asynfunc() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("some data");
+      resolve("Data Loaded");
+    }, 6000);
+  });
+}
+console.log("fetching data1");
+let p1 = asynfunc();
+
+p1.then((res) => {
+  console.log(res);
+});
